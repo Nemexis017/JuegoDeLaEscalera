@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA ESCALERA</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="img/objetivo.icon">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+</head>
+<body onclick="musica.play();">
+    <div class="container-fluid tabalaJugeo">
+        <div class="container-xxl">
+            <div class="col-12 row">
+               <div class="col-2">
+                    <div class="row">
+                        <div class="col-12 home casa">
+                            <a href="index.html"><img src="img/casa.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 imagen-locarIz">
+                            <img src="img/serpientes.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 movimi_rib">
+                            <div class="col-12 jugadores-caja">
+                                <button class="jugadores">JUGADORES</button>
+                            </div>
+                            <div class="col-12 fichas" id="casilla-0">
+                                <img src="img/ficha1.png" alt="Ficha1" class="ficha1">
+                                <img src="img/ficha2.png" alt="">
+                                <img src="img/ficha3.png" alt="">
+                                <img src="img/ficha4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+               </div>
+                <div class="col-7 caja-juegoPrin">
+                    <img src="img/esacaleras-1.png" alt="" class="escaleras-3">
+                    <img src="img/culebrita-4.png" alt="culebra/mediana" class="culebrita-5">
+                    <img src="img/culebrita-2.png" alt="" class="culebrita-3">
+                    <img src="img/esacaleras-2.png" alt="" class="escalera-4"> 
+                    <img src="img/culebrita-3.png" alt="culebrita" class="culebra-2">
+                    <img src="img/culebrita-4.png" alt="" class="culebra-85">
+                    <img src="img/esacaleras-2.png" alt="" class="escalera-89">
+                    <img src="img/esacaleras-2.png" alt="escalera/corta" class="escalera-2">
+                    <div class="row filas">
+                         <div class="col-1 caja-1 numeros ganador" id="casilla-100">
+                            100
+                         </div>
+                         <div class="col-1 caja-2 numeros3 principio" id="casilla-99">
+                            99
+                         </div>
+                         <div class="col-1 caja-3 numeros" id="casilla-98">
+                            98
+                         </div>
+                         <div class="col-1 caja-1 numeros retrocede5" id="casilla-97">
+                            97
+                         </div>
+                         <div class="col-1 caja-2 numeros2" id="casilla-96">
+                            96
+                         </div>
+                         <div class="col-1 caja-3 numeros" id="casilla-95">
+                            95
+                         </div>
+                         <div class="col-1 caja-1 numeros" id="casilla-94">
+                            94
+                         </div>
+                         <div class="col-1 caja-2 numeros2" id="casilla-93">
+                            93
+                         </div>
+                         <div class="col-1 caja-3 numeros retrocede10" id="casilla-92">
+                            92
+                         </div>
+                         <div class="col-1 caja-1 numeros" id="casilla-91">
+                            91
+                         </div>
+                        
+                    </div>
+                    <div class="row">
+                       
+                        <div class="col-1 caja-3 numeros" id="casilla-81">
+                           81
+                        </div>
+                        <div class="col-1 caja-1 numeros" id="casilla-82">
+                           82
+                        </div>
+                        <div class="col-1 caja-2 numeros2" id="casilla-83">
+                           83
+                        </div>
+                        <div class="col-1 caja-3 numeros" id="casilla-84">
+                           84
+                        </div>
+                        <div class="col-1 caja-1 numeros" id="casilla-85">
+                           85
+                        </div>
+                        <div class="col-1 caja-2 numeros2" id="casilla-86">
+                           86
+                        </div>
+                        <div class="col-1 caja-3 numeros" id="casilla-87">
+                           87
+                        </div>
+                        <div class="col-1 caja-1 numeros" id="casilla-88">
+                           88
+                        </div>
+                        <div class="col-1 caja-2 numeros2" id="casilla-89">
+                           89
+                        </div>
+                        <div class="col-1 caja-3 numeros" id="casilla-90">
+                           90
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        
+                        <div class="col-1 caja-1 numeros principio" id="casilla-80">
+                           80
+                        </div>
+                        <div class="col-1 caja-2 numeros2" id="casilla-79">
+                           79
+                        </div>
+                        <div class="col-1 caja-3 numeros" id="casilla-78">
+                           78
+                        </div>
+                        <div class="col-1 caja-1 numeros avanza5" id="casilla-77">
+                           77
+                        </div>
+                        <div class="col-1 caja-2 numeros2" id="casilla-76">
+                           76
+                        </div>
+                        <div class="col-1 caja-3 numeros" id="casilla-75">
+                           75
+                        </div>
+                        <div class="col-1 caja-1 numeros" id="casilla-74">
+                           74
+                        </div>
+                        <div class="col-1 caja-2 numeros2" id="casilla-73">
+                           73
+                        </div>
+                        <div class="col-1 caja-3 numeros" id="casilla-72">
+                           72
+                        </div>
+                        <div class="col-1 caja-1 numeros" id="casilla-71">
+                           71
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                       
+                        <div class="col-1 caja-3 numeros" id="casilla-61">
+                           61
+                        </div>
+                        <div class="col-1 caja-1 numeros avanza5" id="casilla-62">
+                           62
+                        </div>
+                        <div class="col-1 caja-2 numeros2" id="casilla-63">
+                           63
+                        </div>
+                        <div class="col-1 caja-3 numeros" id="casilla-64">
+                           64
+                        </div>
+                        <div class="col-1 caja-1 numeros" id="casilla-65">
+                           65
+                        </div>
+                        <div class="col-1 caja-2 numeros2" id="casilla-66">
+                           66
+                        </div>
+                        <div class="col-1 caja-3 numeros" id="casilla-67">
+                           67
+                        </div>
+                        <div class="col-1 caja-1 numeros retrocede10" id="casilla-68">
+                           68
+                        </div>
+                        <div class="col-1 caja-2 numeros2" id="casilla-69">
+                           69
+                        </div>
+                        <div class="col-1 caja-3 numeros retrocede5" id="casilla-70">
+                           70
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                      
+                        <div class="col-1 caja-1 numeros" id="casilla-60">
+                           60
+                        </div>
+                        <div class="col-1 caja-2 numeros2" id="casilla-59">
+                           59
+                        </div>
+                        <div class="col-1 caja-3 numeros" id="casilla-58">
+                           58
+                        </div>
+                        <div class="col-1 caja-1 numeros" id="casilla-57">
+                           57
+                        </div>
+                        <div class="col-1 caja-2 numeros2" id="casilla-56">
+                           56
+                        </div>
+                        <div class="col-1 caja-3 numeros" id="casilla-55">
+                           55
+                        </div>
+                        <div class="col-1 caja-1 numeros" id="casilla-54">
+                           54
+                        </div>
+                        <div class="col-1 caja-2 numeros2" id="casilla-53">
+                           53
+                        </div>
+                        <div class="col-1 caja-3 numeros" id="casilla-52">
+                           52
+                        </div>
+                        <div class="col-1 caja-1 numeros" id="casilla-51">
+                           51
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                       
+                        <div class="col-1 caja-3 numeros" id="casilla-41">
+                           41
+                        </div>
+                        <div class="col-1 caja-1 numeros" id="casilla-42">
+                           42
+                        </div>
+                        <div class="col-1 caja-2 numeros2" id="casilla-43">
+                           43
+                        </div>
+                        <div class="col-1 caja-3 numeros" id="casilla-44">
+                           44
+                        </div>
+                        <div class="col-1 caja-1 numeros" id="casilla-45">
+                           45
+                        </div>
+                        <div class="col-1 caja-2 numeros2" id="casilla-46">
+                           46
+                        </div>
+                        <div class="col-1 caja-3 numeros" id="casilla-47">
+                           47
+                        </div>
+                        <div class="col-1 caja-1 numeros principio" id="casilla-48">
+                           48
+                        </div>
+                        <div class="col-1 caja-2 numeros2" id="casilla-49">
+                           49
+                        </div>
+                        <div class="col-1 caja-3 numeros" id="casilla-50">
+                           50
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                       
+                        <div class="col-1 caja-1 numeros" id="casilla-40">
+                           40
+                        </div>
+                        <div class="col-1 caja-2 numeros2" id="casilla-39">
+                           39
+                        </div>
+                        <div class="col-1 caja-3 numeros" id="casilla-38">
+                           38
+                        </div>
+                        <div class="col-1 caja-1 numeros" id="casilla-37">
+                           37
+                        </div>
+                        <div class="col-1 caja-2 numeros2" id="casilla-36">
+                           36
+                        </div>
+                        <div class="col-1 caja-3 numeros" id="casilla-35">
+                           35
+                        </div>
+                        <div class="col-1 caja-1 numeros" id="casilla-34">
+                           34
+                        </div>
+                        <div class="col-1 caja-2 numeros2" id="casilla-33">
+                           33
+                        </div>
+                        <div class="col-1 caja-3 numeros" id="casilla-32">
+                           32
+                        </div>
+                        <div class="col-1 caja-1 numeros" id="casilla-31">
+                           31
+                        </div>
+                       
+                    </div>
+                    <div class="row">
+                       
+                        <div class="col-1 caja-3 numeros" id="casilla-21"> 
+                           21
+                        </div>
+                        <div class="col-1 caja-1 numeros avanza5" id="casilla-22">
+                           22
+                        </div>
+                        <div class="col-1 caja-2 numeros2" id="casilla-23">
+                           23
+                        </div>
+                        <div class="col-1 caja-3 numeros" id="casilla-24">
+                           24
+                        </div>
+                        <div class="col-1 caja-1 numeros" id="casilla-25">
+                           25
+                        </div>
+                        <div class="col-1 caja-2 numeros2" id="casilla-26">
+                           26
+                        </div>
+                        <div class="col-1 caja-3 numeros" id="casilla-27">
+                           27
+                        </div>
+                        <div class="col-1 caja-1 numeros" id="casilla-28">
+                           28
+                        </div>
+                        <div class="col-1 caja-2 numeros2" id="casilla-29">
+                           29
+                        </div>
+                        <div class="col-1 caja-3 numeros retrocede10" id="casilla-30">
+                           30
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        
+                        <div class="col-1 caja-1 numeros" id="casilla-20">
+                           20
+                        </div>
+                        <div class="col-1 caja-2 numeros2" id="casilla-19">
+                           19
+                        </div>
+                        <div class="col-1 caja-3 numeros" id="casilla-18">
+                           18
+                        </div>
+                        <div class="col-1 caja-1 numeros" id="casilla-17">
+                           17
+                        </div>
+                        <div class="col-1 caja-2 numeros2" id="casilla-16">
+                           16
+                        </div>
+                        <div class="col-1 caja-3 numeros" id="casilla-15">
+                           15
+                        </div>
+                        <div class="col-1 caja-1 numeros" id="casilla-14">
+                           14
+                        </div>
+                        <div class="col-1 caja-2 numeros2" id="casilla-13">
+                           13
+                        </div>
+                        <div class="col-1 caja-3 numeros" id="casilla-12">
+                           12
+                        </div>
+                        <div class="col-1 caja-1 numeros" id="casilla-11">
+                           11
+                        </div>
+                    
+                    </div>
+                    <div class="row">
+                        
+                        <div class="col-1 caja-3 numeros" id="casilla-1">
+                           1
+                        </div>
+                        <div class="col-1 caja-1 numeros" id="casilla-2">
+                           2
+                        </div>
+                        <div class="col-1 caja-2 numeros2 avanza10" id="casilla-3">
+                           3
+                        </div>
+                        <div class="col-1 caja-3 numeros" id="casilla-4">
+                           4
+                        </div>
+                        <div class="col-1 caja-1 numeros" id="casilla-5">
+                           5
+                        </div>
+                        <div class="col-1 caja-2 numeros2" id="casilla-6">
+                           6
+                            
+                        </div>
+                        <div class="col-1 caja-3 numeros" id="casilla-7">
+                           7
+                        </div>
+                        <div class="col-1 caja-1 numeros" id="casilla-8">
+                           8
+                        </div>
+                        <div class="col-1 caja-2 numeros2" id="casilla-9">
+                           9
+                        </div>
+                        <div class="col-1 caja-3 numeros" id="casilla-10">
+                           10
+                        </div>
+                        
+                </div>
+            </div>
+            <div class="col-3 lateral-derecho">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-6"></div>
+                        <div class="col-6 ayuda">
+                            <a href="ayuda.html"><img src="img/ayuda.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 imagen-lateral">
+                            <img src="img/lateral-1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 ibic-cara">
+                            <img src="img/dado-1.png" id="cara-1" alt="" >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 boton-tirar">
+                            <button class="bn-tirar" onclick="dado()">TIRAR</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+   </div>
+   <footer class="pie">
+      <div class="col-12">
+       <p>JESUS CARVAJA & Oscar Muños</p>
+       <p>Institución Educativa Maria Auxiliadora</p>
+       <p>Iquira-Huila</p>
+       <p>&copy; 2022</p>
+      </div>
+   </footer>
+
+   
+</body>
+</html>
